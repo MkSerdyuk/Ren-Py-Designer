@@ -20,9 +20,12 @@ namespace Ren_Py_Designer.Widgets.Menus
     /// </summary>
     public partial class NodeList : Page
     {
+        
+
         public NodeList()
         {
             InitializeComponent();
+            
         }
     }
 }

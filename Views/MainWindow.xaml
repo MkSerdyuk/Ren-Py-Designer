@@ -13,7 +13,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1000"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
@@ -37,7 +37,7 @@
 
         <Grid x:Name="WorkspaceLeft" Grid.Row="1"  Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition/>
+                <RowDefinition Height="500"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
@@ -45,13 +45,13 @@
             <GridSplitter Grid.Row="1" Grid.ColumnSpan="3" Height="3"
                 HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Black" />
 
-            <widgets:MenuBox Grid.ColumnSpan="3" Grid.Row="0" />
-            <widgets:MenuBox Grid.ColumnSpan="3" Grid.Row="2" />
+            <widgets:MenuBox x:Name="LMenuBoxUp" Grid.ColumnSpan="3" Grid.Row="0" />
+            <widgets:MenuBox x:Name="LMenuBoxDown" Grid.ColumnSpan="3" Grid.Row="2" />
         </Grid>
 
         <Grid x:Name="WorkspaceRight" Grid.Row="1" Grid.Column="2">
             <Grid.RowDefinitions>
-                <RowDefinition/>
+                <RowDefinition />
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
@@ -59,8 +59,8 @@
             <GridSplitter Grid.Row="1" Grid.ColumnSpan="3" Height="3"
                 HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Black" />
 
-            <widgets:MenuBox Grid.ColumnSpan="3" Grid.Row="0" />
-            <widgets:MenuBox Grid.ColumnSpan="3" Grid.Row="2" />
+            <widgets:MenuBox x:Name="RMenuBoxUp" Grid.ColumnSpan="3" Grid.Row="0" />
+            <widgets:MenuBox x:Name="RMenuBoxDown" Grid.ColumnSpan="3" Grid.Row="2" />
         </Grid>
 
     </Grid>

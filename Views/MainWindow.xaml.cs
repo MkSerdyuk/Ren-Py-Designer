@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ren_Py_Designer.Widgets;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,9 @@ namespace Ren_Py_Designer
         public MainWindow()
         {
             InitializeComponent();
+            //настройки по-умолчанию
+            RMenuBoxUp.SelectMenu(1);
+            LMenuBoxUp.SelectMenu(0);
         }
     }
 }

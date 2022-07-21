@@ -35,5 +35,10 @@ namespace Ren_Py_Designer.Widgets
             Type pageType = examplePage.GetType();
             Content.Navigate(Activator.CreateInstance(pageType)); //создаем страницу с нужным нам типом
         }
+
+        public void SelectMenu(int index)
+        {
+            MenuChooser.SelectedItem = MenuChooser.Items[index];
+        }
     }
 }
